@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80ch;
+  border-radius: 10px;
+  background-color: var(--bg-dark);
+  padding: 0.5rem 1rem;
+}
+
+.title {
+  position: absolute;
+  top: -4rem;
+  font-size: 3rem;
+  color: var(--text-color-2);
+}
+
+.container p {
+  font-size: 1.5rem;
+  color: var(--text-color-3);
+}
+
+.container a {
+  color: var(--text-color-3);
+  border-bottom: 1px dotted var(--text-color-3);
+  transition: var(--transition);
+}
+
+.container a:hover {
+  opacity: 0.75;
+}

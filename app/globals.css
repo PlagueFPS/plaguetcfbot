@@ -1,5 +1,4 @@
 :root {
-  --spacing: 0.12rem;
   --transition: all .3s ease-in-out;
   --text-color: hsl(205, 100%, 96%);
   --text-color-2: hsl(205, 90%, 88%);
@@ -9,6 +8,7 @@
   --text-color-5: hsl(205, 78%, 60%);
   --text-color-6: hsl(205, 63%, 48%);
   --button-color: hsl(205, 86%, 81%);
+  --bg-dark: hsl(0, 0%, 7%);
   --bg-color: hsl(225, 8%, 9%);
   --bg-color-2: hsl(0, 0%, 13%);
   --bg-color-3: hsl(0, 0%, 15%);

@@ -5,6 +5,7 @@
   align-items: center;
   width: 100%;
   height: 150px;
+  margin-top: 75px;
   background-color: var(--bg-color);
 }
 
@@ -23,7 +24,7 @@
 
 .title {
   position: relative;
-  color: hsl(205, 90%, 88%);
+  color: var(--text-color-2);
   font-weight: 600;
   font-size: 4rem;
   text-transform: capitalize;
@@ -32,7 +33,7 @@
 .title::after {
   position: absolute;
   content: "";
-  background: hsl(205, 90%, 88%);
+  background: var(--text-color-2);
   width: 50%;
   height: 3px;
   margin: auto;
