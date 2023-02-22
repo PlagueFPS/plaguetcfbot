@@ -1,0 +1,7 @@
+{
+  "contentFile": "cf-export.json",
+  "skipContent": true,
+  "skipRoles": true,
+  "skipTags": true,
+  "skipWebhooks": true
+}

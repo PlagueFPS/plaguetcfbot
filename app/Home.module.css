@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  flex-grow: 1;
+  margin: auto;
+  width: 100%;
+  min-height: calc(100vh - (150px + 75px));
+  background-color: var(--bg-color);
+  border-top: 2px solid var(--outline-color);
+}
