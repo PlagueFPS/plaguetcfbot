@@ -1,0 +1,13 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.main {
+  width: 100%;
+}
