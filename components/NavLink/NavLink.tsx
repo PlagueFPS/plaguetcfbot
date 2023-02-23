@@ -1,6 +1,5 @@
 "use client"
 import styles from './NavLink.module.css'
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 interface NavLinksProps {
@@ -16,9 +15,9 @@ const NavLink = ({ href, children, className, exact, ariaLabel }: NavLinksProps)
   const isActive =  exact ? pathname === href : pathname?.startsWith(href)
 
   return (
-    <Link href={ href } className={ isActive ? `${className} ${styles.active}` : className } aria-label={ ariaLabel }>
+    <a href={ href } className={ isActive ? `${className} ${styles.active}` : className } aria-label={ ariaLabel }>
       { children }
-    </Link>
+    </a>
   )
 }
 

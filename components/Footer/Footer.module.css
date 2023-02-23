@@ -1,0 +1,208 @@
+.footer {
+  position: relative;
+  margin-top: auto; 
+  background-color: var(--bg-color-2);
+  width: 100%;
+}
+
+.container {
+  background-color: var(--bg-color-2);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  max-width: 1600px;
+}
+
+.backToTop_Text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem; 
+  font-size: 1.2rem;
+  color: var(--text-color-2); 
+  background-color: var(--outline-color);
+  letter-spacing: var(--spacing);
+}
+
+.backToTop {
+  color: var(--clr-primary-9); 
+  font-weight: 400;
+}
+
+.backToTop_Text:hover {
+  background-color: var(--bg-color-4);
+}
+
+.content {
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-top: 2.5rem;
+  border-bottom: 1px solid var(--text-color-3);
+}
+
+.content > p {
+  color: var(--text-color-3);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.content > p > a {
+  color: var(--text-color-3);
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.content > p > a:hover {
+  color: var(--text-color-5);
+}
+
+.middleContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 360px;
+}
+
+.logo img {
+  height: auto;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem;
+}
+
+.list dt {
+  margin: 0 0 15px 15px;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: var(--text-color-3);
+}
+
+.list dd {
+  display: flex;
+  margin: 0 0 10px;
+}
+
+.list dd a {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  color: var(--text-color-3);
+  line-height: 1rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  transition: var(--transition);
+}
+
+.list dd a:hover {
+  background-color: var(--bg-color-3);
+}
+
+.list .listLink:hover svg {
+  fill: var(--text-color-3);
+}
+
+.list dd a span {
+  width: 100%;
+  font-weight: 600;
+}
+
+.list .listLink svg {
+  height: 24px;
+  fill: var(--text-color-3);
+  transition: var(--transition);
+}
+
+.bottomContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--text-color-3);
+  padding: 2rem 0;
+}
+
+.socialsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.socialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.socialLink a {
+  display: flex; 
+}
+
+.socialLink svg {
+  height: 2rem;
+  fill: var(--text-color-5);
+}
+
+.socialLink svg:hover {
+  fill: var(--text-color-2);
+}
+
+.updateLogLink {
+  opacity: .7;
+}
+
+.copyrightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0; 
+  margin: 2rem;
+  font-size: 0.8rem; 
+  color: var(--text-color-3);
+}
+
+.copyrightContainer span {
+  max-width: 500px;
+}
+
+.copyrightContainer > a {
+  color: var(--text-color-3);
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: 0.5rem;  
+}
+
+.copyrightContainer > a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px){
+  .middleContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottomContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
