@@ -7,6 +7,6 @@ export const NavRoutes = [
   {
     id: 2,
     name: 'Login With Twitch',
-    href: 'https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=zp2w9aqvw5x1f27efdnuwdj42pfmwc&redirect_uri=http://localhost&scope=chat:edit+chat:read'
+    href: 'https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=jmvhgbt1te7mm7ckrkre4kueqdor9n&redirect_uri=https://main--plaguetcfbot.netlify.app&scope=chat:edit+chat:read'
   }
 ]
