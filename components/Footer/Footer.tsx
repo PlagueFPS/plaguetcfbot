@@ -42,7 +42,7 @@ const Footer = () => {
               </a>
             </dd>
             <dd>
-              <a href="https://apps.thecyclefrontier.wiki/map" className={ styles.listLink } target="_blank" rel="noreferrer">
+              <a href="https://tools.thecyclefrontier.wiki/map" className={ styles.listLink } target="_blank" rel="noreferrer">
                 <span>Interactive Map</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"></path>
@@ -50,8 +50,24 @@ const Footer = () => {
               </a>
             </dd>
             <dd>
-              <a href="https://apps.thecyclefrontier.wiki/calculator" className={ styles.listLink } target="_blank" rel="noreferrer">
+              <a href="https://tools.thecyclefrontier.wiki/calculator" className={ styles.listLink } target="_blank" rel="noreferrer">
                 <span>Weapon Calculator</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"></path>
+                </svg>
+              </a>
+            </dd>
+            <dd>
+              <a href="https://tracker.thecyclefrontier.wiki" className={ styles.listLink } target="_blank" rel="noreferrer">
+                <span>Item Tracker</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"></path>
+                </svg>
+              </a>
+            </dd>
+            <dd>
+              <a href="https://tools.thecyclefrontier.wiki/progress" className={ styles.listLink } target="_blank" rel="noreferrer">
+                <span>Progress Tracker</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"></path>
                 </svg>
@@ -61,7 +77,7 @@ const Footer = () => {
           <dl className={ styles.list }>
             <dt>Our Games</dt>
             <dd>
-              <a href="https://apps.thecyclefrontier.wiki/forge" target='_blank' rel='noreferrer' className={ styles.listLink }>
+              <a href="https://tools.thecyclefrontier.wiki/forge" target='_blank' rel='noreferrer' className={ styles.listLink }>
                 <span>Forge Simulator</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"></path>
@@ -77,7 +93,7 @@ const Footer = () => {
               </a>
             </dd>
             <dd>
-            <a href="https://apps.thecyclefrontier.wiki/loadout" target='_blank' rel='noreferrer' className={ styles.listLink }>
+            <a href="https://tools.thecyclefrontier.wiki/loadout" target='_blank' rel='noreferrer' className={ styles.listLink }>
                 <span>Loadout Generator</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"></path>

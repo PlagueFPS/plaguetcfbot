@@ -25,7 +25,7 @@ const Navbar = () => {
         <ul className={ styles.list }>
           { NavRoutes.map(route => (
             <li key={ route.id }>
-              <NavLink href={ route.href }>{ route.name }</NavLink>
+              <NavLink href={ route.href } target={ route.target }>{ route.name }</NavLink>
             </li>
           ))}
         </ul>

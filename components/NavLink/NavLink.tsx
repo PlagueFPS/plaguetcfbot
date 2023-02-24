@@ -8,14 +8,21 @@ interface NavLinksProps {
   className?: string
   exact?: boolean
   ariaLabel?: string
+  target?: string
 }
 
-const NavLink = ({ href, children, className, exact, ariaLabel }: NavLinksProps) => {
+const NavLink = ({ href, children, className, exact, ariaLabel, target }: NavLinksProps) => {
   const pathname = usePathname()
   const isActive =  exact ? pathname === href : pathname?.startsWith(href)
 
   return (
-    <a href={ href } className={ isActive ? `${className} ${styles.active}` : className } aria-label={ ariaLabel }>
+    <a 
+      href={ href } 
+      className={ isActive ? `${className} ${styles.active}` : className } 
+      aria-label={ ariaLabel } 
+      target={ target ?? undefined } 
+      rel={ target ? 'noreferrer' : undefined }
+    >
       { children }
     </a>
   )
