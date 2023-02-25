@@ -8,7 +8,6 @@ export const NavRoutes = [
     id: 2,
     name: 'Add Bot To Twitch',
     href: 'https://id.twitch.tv/oauth2/authorize?response_type=code&client_id=jmvhgbt1te7mm7ckrkre4kueqdor9n&redirect_uri=https://main--plaguetcfbot.netlify.app&scope=chat:edit+chat:read',
-    target: '_blank'
   },
   {
     id: 3,
