@@ -30,7 +30,7 @@ export const generateMetadata = async () => {
 export default function Home() {
   const posts: ContentfulCollection<TypeTcfbot> = use(getPosts({ content_type: 'tcfbot', 'sys.id': '1uGMNHezuD0HgDZGEcVeh3'}))
   const { featuredImage } = posts.items[0].fields
-  const title = 'The Cycle: Frontier Bot'
+  const title = 'The Cycle: Frontier Wiki Bot'
 
   return (
     <>

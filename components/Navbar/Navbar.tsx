@@ -20,12 +20,12 @@ const Navbar = () => {
               height={ 50 }
               />
           </picture>
-          <h2 className={ styles.siteTitle }>Plague TCF Bot</h2>
+          <h2 className={ styles.siteTitle }>TCF Wiki Bot</h2>
         </a>
         <ul className={ styles.list }>
           { NavRoutes.map(route => (
-            <li key={ route.id }>
-              <NavLink href={ route.href } target={ route.target }>{ route.name }</NavLink>
+            <li key={ route.id } className={ route.name.replaceAll(/\s/g, '') }>
+              <NavLink href={ route.href }>{ route.name }</NavLink>
             </li>
           ))}
         </ul>
