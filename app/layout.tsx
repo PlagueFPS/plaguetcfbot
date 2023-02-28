@@ -1,9 +1,16 @@
+export const revalidate = 60
 import './globals.css'
 import styles from './RootLayout.module.css'
 import { Metadata } from 'next';
 import { Rajdhani } from "next/font/google";
+import { use } from 'react';
+import { getPosts } from '@/utils/getPosts';
+import { TypeTcfbot } from '@/contentful/types';
+import { ContentfulCollection } from 'contentful';
 import Navbar from '@/components/Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
+import Header from '@/components/Header/Header';
+import ContentContainer from '@/components/ContentContainer/ContentContainer';
 interface RootLayoutProps {
   children: React.ReactNode
 }
@@ -39,6 +46,9 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const posts: ContentfulCollection<TypeTcfbot> = use(getPosts({ content_type: 'tcfbot', 'sys.id': '1uGMNHezuD0HgDZGEcVeh3'}))
+  const { featuredImage } = posts.items[0].fields
+  const title = 'The Cycle: Frontier Wiki Bot'
   return (
     <html lang="en" style={{backgroundColor: "hsl(225, 8%, 9%)"}}>
       <head />
@@ -47,7 +57,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <div className={ `${styles.wrapper} ${rajdhani.className} `}>
           <Navbar />
           <main className={ styles.main }>
-            {children}
+            <Header bannerImage={ featuredImage } opacity={ 0.5 } title={ title } />
+            <div className={ styles.container }>
+              <ContentContainer />
+              {children}
+            </div>
           </main>
           <Footer />
         </div>

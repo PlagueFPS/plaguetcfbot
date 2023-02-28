@@ -12,7 +12,8 @@ export const generateMetadata = async () => {
     description: description,
     openGraph: {
       title: title,
-      description: description
+      description: description,
+      url: 'https://main--plaguetcfbot.netlify.app/discord'
     },
     twitter: {
       title: title,
@@ -23,5 +24,5 @@ export const generateMetadata = async () => {
 }
 
 export default function Home() {
-  return <CommandContainer title='Twitch Commands' />
+  return <CommandContainer title='Discord Commands' />
 }
