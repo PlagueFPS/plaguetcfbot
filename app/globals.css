@@ -84,14 +84,3 @@ button,
 input {
   font-family: inherit;
 }
-
-.AddBotToTwitch,
-.AddBotToDiscord {
-  opacity: 0.5 !important;
-}
-
-.AddBotToDiscord a:hover,
-.AddBotToTwitch a:hover {
-  cursor: not-allowed !important;
-  background: transparent !important;
-}

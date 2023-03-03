@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { ContentfulCollection } from 'contentful'
 import { getPosts } from '@/utils/getPosts'
-import { TypeTcfbot} from '@/contentful/types'
+import { TypeTcfbot } from '@/contentful/types'
 import CommandContainer from '@/components/CommandContainer/CommandContainer'
 
 export const generateMetadata = async () => {
@@ -23,5 +23,5 @@ export const generateMetadata = async () => {
 }
 
 export default function Home() {
-  return <CommandContainer title='Twitch Commands' />
+  return <CommandContainer title='Discord Commands' />
 }

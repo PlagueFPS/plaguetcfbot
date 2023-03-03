@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { ContentfulCollection } from 'contentful'
 import { getPosts } from '@/utils/getPosts'
-import { TypeTcfbot} from '@/contentful/types'
+import { TypeTcfbot } from '@/contentful/types'
 import CommandContainer from '@/components/CommandContainer/CommandContainer'
 
 export const generateMetadata = async () => {
@@ -13,7 +13,7 @@ export const generateMetadata = async () => {
     openGraph: {
       title: title,
       description: description,
-      url: 'https://main--plaguetcfbot.netlify.app/discord'
+      url: 'https://main--plaguetcfbot.netlify.app/twitch'
     },
     twitter: {
       title: title,
@@ -24,5 +24,5 @@ export const generateMetadata = async () => {
 }
 
 export default function Home() {
-  return <CommandContainer title='Discord Commands' />
+  return <CommandContainer title='Twitch Commands' />
 }

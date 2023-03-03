@@ -11,21 +11,21 @@ interface CommandContainerProps {
 }
 
 const CommandContainer = ({ title }: CommandContainerProps) => {
-  const condition =  title === 'Twitch Commands'
+  const condition = title === 'Twitch Commands'
   const posts: ContentfulCollection<TypeCommands | TypeDiscordCommands> = condition 
     ? use(getPosts({ content_type: 'commands' })) : use(getPosts({ content_type: 'discordCommands' }))
   const commands = posts.items
   const sortedCommands = commands.sort((a, b) => {
-    let x = new Date(a.sys.createdAt).getTime()
-    let y = new Date(b.sys.createdAt).getTime()
-    return x - y
+    const x = new Date(a.sys.createdAt).getTime()
+    const y = new Date(b.sys.createdAt).getTime()
+    return y - x
   })
 
   return (
     <div className={ styles.container }>
       <h2 className={ styles.title } id='commands'>{ title }</h2>
       <ButtonContainer 
-        link={ condition ? '/discord' : '/' } 
+        link={ condition ? '/' : '/twitch' } 
         text={ condition ? 'See Discord Commands' : 'See Twitch Commands' } 
       />
       { sortedCommands.map(command => (
