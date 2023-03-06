@@ -5,5 +5,10 @@ export const NavRoutes = [
     id: 1,
     name: 'Add Bot To Discord',
     href: discordURL,
+  },
+  {
+    id: 2,
+    name: 'Add Bot To Twitch',
+    href: '/addbot'
   }
 ]

@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 import { Rajdhani } from "next/font/google";
 import { use } from 'react';
 import { getPosts } from '@/utils/getPosts';
-import { TypeTcfbot } from '@/contentful/types';
+import { TypeBotInfo, TypeTcfbot } from '@/contentful/types';
 import { ContentfulCollection } from 'contentful';
 import Navbar from '@/components/Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
@@ -47,8 +47,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   const posts: ContentfulCollection<TypeTcfbot> = use(getPosts({ content_type: 'tcfbot', 'sys.id': '1uGMNHezuD0HgDZGEcVeh3'}))
+  const content: ContentfulCollection<TypeBotInfo> = use(getPosts({ content_type: 'botInfo', "sys.id": 'niv5RmWdFLXUsAF5mrIhZ' }))
+  const contentPost = content.items[0]
   const { featuredImage } = posts.items[0].fields
   const title = 'The Cycle: Frontier Wiki Bot'
+  
   return (
     <html lang="en" style={{backgroundColor: "hsl(225, 8%, 9%)"}}>
       <head />
@@ -59,7 +62,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <main className={ styles.main }>
             <Header bannerImage={ featuredImage } opacity={ 0.5 } title={ title } />
             <div className={ styles.container }>
-              <ContentContainer />
+              <ContentContainer post={ contentPost } />
               {children}
             </div>
           </main>

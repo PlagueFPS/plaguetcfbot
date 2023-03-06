@@ -1,5 +1,6 @@
 import { NavRoutes } from '@/utils/NavRoutes'
 import Image from 'next/image'
+import Link from 'next/link'
 import NavLink from '../NavLink/NavLink'
 import styles from './Navbar.module.css'
 
@@ -7,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className={ styles.nav }>
       <div className={ styles.container }>
-        <a href='#top' className={ styles.siteTitle_Container }>
+        <Link href='/' className={ styles.siteTitle_Container }>
           <picture>
             <source srcSet='/images/favicon.avif' type='image/avif'/>
             <source srcSet='/images/favicon.webp' type='image/webp'/>
@@ -21,7 +22,7 @@ const Navbar = () => {
               />
           </picture>
           <h2 className={ styles.siteTitle }>TCF Wiki Bot</h2>
-        </a>
+        </Link>
         <ul className={ styles.list }>
           { NavRoutes.map(route => (
             <li key={ route.id } className={ route.name.replaceAll(/\s/g, '') }>

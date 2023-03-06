@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10rem;
+}
+
+.container p {
+  color: var(--text-color-3);
+  font-size: 1.5rem;
+}
+
+.container a {
+  color: var(--text-color-3);
+  transition: var(--transition);
+  border-bottom: 1px dotted var(--text-color-3);
+}
+
+.container a:hover {
+  opacity: 0.5;
+}
+
+.container b {
+  background-color: var(--bg-color);
+  padding: 0.15rem 0.25rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
