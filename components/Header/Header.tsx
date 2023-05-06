@@ -3,7 +3,7 @@ import * as Contentful from 'contentful'
 import BannerImage from '../BannerImage/BannerImage'
 
 interface HeaderProps {
-  bannerImage: Contentful.Asset
+  bannerImage: string
   title: string
   opacity?: number
 }

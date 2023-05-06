@@ -46,10 +46,8 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const posts: ContentfulCollection<TypeTcfbot> = use(getPosts({ content_type: 'tcfbot', 'sys.id': '1uGMNHezuD0HgDZGEcVeh3'}))
   const content: ContentfulCollection<TypeBotInfo> = use(getPosts({ content_type: 'botInfo', "sys.id": 'niv5RmWdFLXUsAF5mrIhZ' }))
   const contentPost = content.items[0]
-  const { featuredImage } = posts.items[0].fields
   const title = 'The Cycle: Frontier Wiki Bot'
   
   return (
@@ -60,7 +58,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <div className={ `${styles.wrapper} ${rajdhani.className} `}>
           <Navbar />
           <main className={ styles.main }>
-            <Header bannerImage={ featuredImage } opacity={ 0.5 } title={ title } />
+            <Header bannerImage='S3_Background' opacity={ 0.5 } title={ title } />
             <div className={ styles.container }>
               <ContentContainer post={ contentPost } />
               {children}
