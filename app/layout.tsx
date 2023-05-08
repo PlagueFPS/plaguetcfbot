@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 import { Rajdhani } from "next/font/google";
 import { use } from 'react';
 import { getPosts } from '@/utils/getPosts';
-import { TypeBotInfo, TypeTcfbot } from '@/contentful/types';
+import { TypeBotInfo } from '@/contentful/types';
 import { ContentfulCollection } from 'contentful';
 import Navbar from '@/components/Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
